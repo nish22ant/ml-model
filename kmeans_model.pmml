@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_4" xmlns:data="http://jpmml.org/jpmml-model/InlineTable" version="4.4">
+	<Header>
+		<Application name="SkLearn2PMML package" version="0.92.0"/>
+		<Timestamp>2023-04-18T17:18:12Z</Timestamp>
+	</Header>
+	<DataDictionary>
+		<DataField name="x1" optype="continuous" dataType="double"/>
+		<DataField name="x2" optype="continuous" dataType="double"/>
+		<DataField name="x3" optype="continuous" dataType="double"/>
+		<DataField name="x4" optype="continuous" dataType="double"/>
+		<DataField name="x5" optype="continuous" dataType="double"/>
+		<DataField name="x6" optype="continuous" dataType="double"/>
+		<DataField name="x7" optype="continuous" dataType="double"/>
+		<DataField name="x8" optype="continuous" dataType="double"/>
+		<DataField name="x9" optype="continuous" dataType="double"/>
+		<DataField name="x10" optype="continuous" dataType="double"/>
+		<DataField name="x11" optype="continuous" dataType="double"/>
+		<DataField name="x12" optype="continuous" dataType="double"/>
+		<DataField name="x13" optype="continuous" dataType="double"/>
+		<DataField name="x14" optype="continuous" dataType="double"/>
+		<DataField name="x15" optype="continuous" dataType="double"/>
+		<DataField name="x16" optype="continuous" dataType="double"/>
+		<DataField name="x17" optype="continuous" dataType="double"/>
+		<DataField name="x18" optype="continuous" dataType="double"/>
+		<DataField name="x19" optype="continuous" dataType="double"/>
+		<DataField name="x20" optype="continuous" dataType="double"/>
+		<DataField name="x21" optype="continuous" dataType="double"/>
+		<DataField name="x22" optype="continuous" dataType="double"/>
+		<DataField name="x23" optype="continuous" dataType="double"/>
+		<DataField name="x24" optype="continuous" dataType="double"/>
+	</DataDictionary>
+	<ClusteringModel functionName="clustering" algorithmName="sklearn.cluster._kmeans.KMeans" modelClass="centerBased" numberOfClusters="3">
+		<MiningSchema>
+			<MiningField name="x1"/>
+			<MiningField name="x2"/>
+			<MiningField name="x3"/>
+			<MiningField name="x4"/>
+			<MiningField name="x5"/>
+			<MiningField name="x6"/>
+			<MiningField name="x7"/>
+			<MiningField name="x8"/>
+			<MiningField name="x9"/>
+			<MiningField name="x10"/>
+			<MiningField name="x11"/>
+			<MiningField name="x12"/>
+			<MiningField name="x13"/>
+			<MiningField name="x14"/>
+			<MiningField name="x15"/>
+			<MiningField name="x16"/>
+			<MiningField name="x17"/>
+			<MiningField name="x18"/>
+			<MiningField name="x19"/>
+			<MiningField name="x20"/>
+			<MiningField name="x21"/>
+			<MiningField name="x22"/>
+			<MiningField name="x23"/>
+			<MiningField name="x24"/>
+		</MiningSchema>
+		<Output>
+			<OutputField name="cluster" optype="categorical" dataType="string">
+				<Value value="0"/>
+				<Value value="1"/>
+				<Value value="2"/>
+			</OutputField>
+			<OutputField name="affinity(0)" optype="continuous" dataType="double" feature="affinity" value="0"/>
+			<OutputField name="affinity(1)" optype="continuous" dataType="double" feature="affinity" value="1"/>
+			<OutputField name="affinity(2)" optype="continuous" dataType="double" feature="affinity" value="2"/>
+		</Output>
+		<ComparisonMeasure kind="distance">
+			<squaredEuclidean/>
+		</ComparisonMeasure>
+		<ClusteringField field="x1"/>
+		<ClusteringField field="x2"/>
+		<ClusteringField field="x3"/>
+		<ClusteringField field="x4"/>
+		<ClusteringField field="x5"/>
+		<ClusteringField field="x6"/>
+		<ClusteringField field="x7"/>
+		<ClusteringField field="x8"/>
+		<ClusteringField field="x9"/>
+		<ClusteringField field="x10"/>
+		<ClusteringField field="x11"/>
+		<ClusteringField field="x12"/>
+		<ClusteringField field="x13"/>
+		<ClusteringField field="x14"/>
+		<ClusteringField field="x15"/>
+		<ClusteringField field="x16"/>
+		<ClusteringField field="x17"/>
+		<ClusteringField field="x18"/>
+		<ClusteringField field="x19"/>
+		<ClusteringField field="x20"/>
+		<ClusteringField field="x21"/>
+		<ClusteringField field="x22"/>
+		<ClusteringField field="x23"/>
+		<ClusteringField field="x24"/>
+		<Cluster id="0" size="387">
+			<Array type="real">-0.45287769889366986 -0.413219075212955 -0.3648546651111508 -0.39619141399797947 -0.28789401184143737 -0.3417114894028804 -0.33712156280112027 -0.3888424940171362 -0.4343807904313824 -0.48773221503889774 -0.5153288920315502 -0.49151081395932017 -0.48508775552011135 -0.46451644734178804 -0.4487994572831241 -0.45336653414639816 -0.46554415843227737 -0.4879179536726785 -0.5130230431277922 -0.5171117636184801 -0.49982893117975424 -0.48957224679561573 -0.47234982250361746 -0.4707616838019103</Array>
+		</Cluster>
+		<Cluster id="1" size="27">
+			<Array type="real">3.1806350144255298 3.1560096751260724 2.9799729838588056 2.7346970754208293 1.1335820857903756 1.1391088431495096 1.2784441746439033 1.465256210524366 1.5354810658710936 2.260270346093757 2.773736320147369 2.9403504827787774 2.958749883662265 3.0337102339197917 3.0327503651468257 2.8631845850396456 2.654398637820074 2.2889192870224266 2.617015526919891 2.9094332171592168 3.1423998714997246 3.260327742470444 3.126591256189183 3.1816244562137235</Array>
+		</Cluster>
+		<Cluster id="2" size="153">
+			<Array type="real">0.5842256475971304 0.48825830639875734 0.3969900969531197 0.5195376220970952 0.528158603047688 0.6633098538161961 0.6271114515597921 0.7249681535978684 0.8277606347609505 0.8348043651994906 0.8139960821714441 0.7243478559949672 0.704854343316353 0.6395927372904419 0.6000073863372861 0.6414827772456572 0.7091295823016301 0.8302184792269348 0.8358202513961991 0.7945591873009996 0.7097320250723677 0.6629778461647149 0.6430157999463526 0.6292870020494692</Array>
+		</Cluster>
+	</ClusteringModel>
+</PMML>
